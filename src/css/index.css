@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* //////// */
+@layer components{
+    .menu-line{
+        @apply block h-[3px] w-8  bg-gray-200 m-[5px] rounded-lg group-hover:animate-pulse duration-200;
+    }
+
+    /* ======================= */
+
+    /* responsive nav */
+    .nav-sm{
+        @apply  flex flex-col  justify-center space-y-2 items-center h-screen w-screen fixed top-0  right-0  bg-black z-10;
+    };
+    .nav-md{
+        @apply flex md:flex-row md:bg-transparent md:h-auto md:w-auto md:items-start md:static  md:space-y-0 md:justify-center space-x-4 ;
+    };
+
+    /* ======================= */
+
+    /* navigation menu btns */
+    .nav-item{
+        @apply text-2xl text-white transform   hover:scale-105 hover:border-gray-300 hover:text-gray-300  duration-200;
+    }
+    .nav-item-sm{
+        @apply hidden border-l border-transparent p-2 ;
+    }
+    /* ======================= */
+
+
+    /* flex items */
+    .flex-center{
+        @apply flex justify-between items-center ;
+    }
+    .flex-col__end{
+        @apply h-full w-full flex flex-col justify-end md:items-start space-y-4 lg:space-y-7;
+        
+    }
+    /* btn */
+    .btn-sm{
+        @apply text-stone-900 font-semibold text-center py-[1px] px-3  w-fit;
+    }
+
+    .nav-item-md{
+        @apply hidden md:block border-b md:border-l-0 md:hover:border-b md:text-xl ;
+    }
+    .iconStyle{
+    @apply text-white text-2xl hover:translate-y-[-2px] duration-200 ;
+    }
+    .cover{
+    @apply  h-screen w-screen z-10 px-10 py-10
+    }
+    /* filter */
+    .dark-filter{
+        @apply hover:backdrop-brightness-50 h-full w-full p-6 duration-300
+    }
+    /* typography */
+    .header__banner-title{
+        @apply text-white text-2xl md:text-3xl lg:text-4xl md:w-1/2 ;
+    }
+}
+
+
+
+.header{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7580398162327718) 0%, rgba(0,0,0,0.3108728943338438) 100%),url(../../public/image/header/header-bg.jpg);
+    background-size:cover;   
+}
+.blurB{
+    backdrop-filter:blur(2px);
+}
+.header--img__1{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%),url(../../public/image/header/featured-guitarman.jpg.webp);
+    background-size:cover;   
+    background-position:center;
+}
+.header--img__2{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),url(../../public/image/header/featured-watch.jpg.webp);
+    background-size:cover;   
+    background-position:center;
+
+}
+.header--img__3{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%),url(../../public/image/header/featured-beetle.jpg.webp);
+    background-size:cover;   
+    background-position:center;
+
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
