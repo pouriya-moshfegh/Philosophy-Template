@@ -1,13 +1,16 @@
 import React from "react";
 
-export default function HedaerLogoes() {
+export default function HedaerLogoes(props) {
+  const navClickHandler= ()=>{
+    props.navOnClick()
+  }
   return (
     <>
-      <a href="h#" className="icon md:hidden group">
+      <button onClick={navClickHandler} className="icon md:hidden group z-50">
         <span className="menu-line"></span>
         <span className="menu-line"></span>
         <span className="menu-line"></span>
-      </a>
+      </button>
       {/* ===============    md logoes      ================= */}
       <div className="hidden md:flex space-x-4 w-1/4">
         <a href="h#">
