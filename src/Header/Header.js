@@ -33,7 +33,7 @@ export default function Header() {
     }
   };
   return (
-    <header className=" header h-screen z-0 select-none ">
+    <header className=" header  z-0 select-none ">
       {/*header blur for background */}
       <div className="blurB cover">
         {/* ======================================= */}

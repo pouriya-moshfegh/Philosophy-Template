@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeaderBanner() {
   return (
-    <div className="bg-white grid my-8 md:grid-rows-3 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 h-full">
+    <div className="bg-white grid my-8 md:grid-rows-3 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 h-[90%]">
       {/* first img(big one) */}
       <div className="header--img__1 md:col-span-3 lg:col-span-2 md:row-span-2  ">
         <div className="dark-filter">

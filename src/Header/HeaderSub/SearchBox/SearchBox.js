@@ -10,14 +10,15 @@ export default function SearchBox(props) {
       <div
         className="
         flex justify-between md:justify-center items-center
-         relative md:hover:justify-between w-0 md:w-1/3 h-10 group duration-300 hover:bg-slate-100/20 "
+         relative md:hover:justify-between w-0 md:w-1/3 h-10 group duration-300 hover:bg-slate-100/10 "
       >
         {/* ===============     search input      ================= */}
 
         <input
           type="search"
           placeholder="search"
-          className="outline-none px-2 py-1 h-full bg-transparent absolute top-0 left-0 right-0 placeholder:text-2xl placeholder:text-transparentfocus:placeholder:text-white md:placeholder:text-white text-xl text-transparent group-hover:text-white lg:px-14 lg:group-hover:px-2  duration-200"
+          className="outline-none absolute top-0 left-0 right-0 h-full md:border-b border-white/20 hover:border-transparent text-white   bg-transparent caret-white placeholder:text-xl
+          placeholder:text-white text-xl lg:text-2xl p-2 duration-200"
         />
 
         {/* ===============     search icon    ================= */}
@@ -25,10 +26,10 @@ export default function SearchBox(props) {
         <button
           href="h#"
           onClick={searchBoxOpen}
-          className="absolute right-2 top-0 py-1 md:right-20 lg:right-38 xl:right-40 md:group-hover:right-2 lg:group-hover-right-2 duration-500 hover:bg-slate-300/10
-          p-2 rounded-full"
+          className="absolute right-2 top-0 p-2 md:p-1 duration-500 hover:bg-slate-300/10 md:group-hover:bg-transparent 
+       rounded-full"
         >
-          <i className="fa fa-search text-white/80 text-2xl"></i>
+          <i className="fa fa-search text-white/80 md:hover:text-white text-2xl"></i>
         </button>
       </div>
       {/* this is for moblile size when clicked on item */}
