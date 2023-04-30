@@ -10,7 +10,7 @@ export default function ArticleCard(props) {
     >
       {/* card image */}
       <div className="h-1/2 overflow-hidden">
-        <img className="h-full w-full group-hover:scale-105 duration-200" src={props.img} alt="lamp " />
+        <img className="articlePhoto h-full w-full object-cover group-hover:scale-105 duration-200" src={props.img} alt="lamp " />
       </div>
       {/* text container */}
       <div className="p-4">

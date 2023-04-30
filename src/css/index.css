@@ -59,10 +59,16 @@
     }
 }
 
-::selection{
+html::selection{
 color:none;
 background-color:none;
-
+}
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
 }
 
 input[type="search"]::-webkit-search-decoration,

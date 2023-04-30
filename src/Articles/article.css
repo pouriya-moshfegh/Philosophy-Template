@@ -1,6 +1,6 @@
+@media only screen and (max-width:300px){
+articlePhoto{
+object-fit:contain;
+}
 
-.masonry-wrap {
-    max-width: none;
-    width: 1440px;
-    overflow: hidden;
 }

@@ -17,8 +17,8 @@ export default function ArticlePage(props) {
   let { title, img, topic, time } = targetArticle[0];
 
   return (
-    <div className="bg-gray-100 select-none noSelect">
-      <div className="h-[25vh] overflow-hidden">
+    <div className="bg-gray-100/30 select-none noSelect">
+      <div className="sm:h-[25svh] h-[20svh] overflow-hidden">
         <Header className=""></Header>
       </div>
       {/* container */}
