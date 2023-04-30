@@ -6,7 +6,7 @@ export default function ArticleCard(props) {
   return (
     <Link
       to={`articles/${props.title}`}
-      className="w-[330px] bg-white shadow-md max-h-[90vh] min-h-[600px]  m-3 relative group"
+      className="w-[330px] select-none noSelect bg-white shadow-md max-h-[90vh] min-h-[600px]  m-3 relative group"
     >
       {/* card image */}
       <div className="h-1/2 overflow-hidden">

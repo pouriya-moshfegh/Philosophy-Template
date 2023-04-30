@@ -28,3 +28,6 @@ html{
 font-size:70%;
 }
 }
+.blurB{
+    backdrop-filter:blur(2px);
+}

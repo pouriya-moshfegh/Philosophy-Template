@@ -59,11 +59,10 @@
     }
 }
 
+::selection{
+color:none;
+background-color:none;
 
-
-
-.blurB{
-    backdrop-filter:blur(2px);
 }
 
 input[type="search"]::-webkit-search-decoration,
