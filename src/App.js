@@ -4,7 +4,7 @@ import MainArticle from "./Articles/HomePage";
 
 function App() {
   let routes = useRoutes([
-    { path: "/", element: <MainArticle /> },
+    { path: "/*", element: <MainArticle /> },
     { path: "/articles/:id", element: <ArticlePage /> },
   ]);
   return <>{routes}</>;
