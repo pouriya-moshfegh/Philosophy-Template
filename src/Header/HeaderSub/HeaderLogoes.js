@@ -29,7 +29,7 @@ export default function HedaerLogoes(props) {
       <div className="w-2/3 text-center p-1 ">
       <img
         className="w-[70%] md:max-w-[60%] lg:max-w[50%] p-2 mx-auto"
-        src="./image/header/logo-header.svg"
+        src="/image/header/logo-header.svg"
         alt="header-logo"
       />
       </div>

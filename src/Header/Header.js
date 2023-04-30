@@ -4,12 +4,11 @@ import "./HeaderSub/header.css";
 
 import Nav from "./HeaderSub/Nav/Nav";
 import HeaderLogoes from "./HeaderSub/HeaderLogoes";
-import HeaderBanner from "./HeaderSub/HeaderBanner";
 import SearchBox from "./HeaderSub/SearchBox/SearchBox";
 
 //............................................
 
-export default function Header() {
+export default function Header(props) {
   const [mode, setMode] = useState({
     navMode: "hidden",
     searchBoxMode: "hidden",
@@ -25,7 +24,7 @@ export default function Header() {
 
   // searchBox close and open for mobile size
 
-  const searchBoxChanger = () => {
+  const searchBoxChanger = (props) => {
     if (mode.searchBoxMode === "hidden") {
       setMode({ searchBoxMode: "block" });
     } else {
@@ -45,7 +44,7 @@ export default function Header() {
             <SearchBox searchBoxMode={searchBoxChanger} />
           </div>
           <Nav mode={mode.navMode} />
-          <HeaderBanner />
+        {props.children}
         </div>
 
         {/* ====================================== */}
