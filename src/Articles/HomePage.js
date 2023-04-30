@@ -9,7 +9,7 @@ export default function MainArticle() {
   return (
     <>
     <Header><HeaderBanner/></Header>
-    <section className="pt-24 sm:px-14  bg-[#f2f2f2] ">
+    <section className="pt-24 sm:px-14  bg-[#f2f2f2] select-none noSelect ">
       <div className="container mx-auto flex justify-evenly flex-wrap ">
         {/* card */}
         {articles.map((article) => {

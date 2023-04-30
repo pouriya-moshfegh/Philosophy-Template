@@ -32,7 +32,7 @@ export default function Header(props) {
     }
   };
   return (
-    <header className=" header  z-0 select-none ">
+    <header className=" header z-0 select-none noSelect">
       {/*header blur for background */}
       <div className="blurB cover">
         {/* ======================================= */}
