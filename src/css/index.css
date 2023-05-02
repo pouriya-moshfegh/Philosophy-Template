@@ -44,7 +44,7 @@
     }
 
     .iconStyle{
-    @apply text-white text-2xl hover:translate-y-[-2px] duration-200 ;
+    @apply text-2xl hover:translate-y-[-2px] duration-200 ;
     }
     .cover{
     @apply  h-screen w-screen z-10 px-10 py-10

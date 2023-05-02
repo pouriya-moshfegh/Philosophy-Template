@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import "./HeaderSub/header.css";
+import "../../css/header.css";
 
-import Nav from "./HeaderSub/Nav/Nav";
+import Nav from "../Nav/Nav";
 import HeaderLogoes from "./HeaderSub/HeaderLogoes";
-import SearchBox from "./HeaderSub/SearchBox/SearchBox";
+import SearchBox from "./HeaderSub/SearchBox";
 
 //............................................
 

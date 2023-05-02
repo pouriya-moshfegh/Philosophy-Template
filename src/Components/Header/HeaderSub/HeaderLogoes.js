@@ -12,7 +12,7 @@ export default function HedaerLogoes(props) {
         <span className="menu-line"></span>
       </button>
       {/* ===============    md logoes      ================= */}
-      <div className="hidden md:flex space-x-4 w-1/4">
+      <div className="hidden md:flex space-x-4 w-1/4 text-white">
         <a href="h#">
           <i className="fa fa-facebook iconStyle hover:text-blue-500"></i>
         </a>
